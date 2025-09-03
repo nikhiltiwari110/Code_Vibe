@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Code Sync - Code, Chat and Collaborate</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Left Section with Illustration -->
+        <div class="left-section">
+            <div class="illustration">
+                <div class="person">
+                    <div class="person-body"></div>
+                    <div class="person-head"></div>
+                    <div class="person-arm-left"></div>
+                    <div class="person-arm-right"></div>
+                </div>
+                <div class="desk">
+                    <div class="desk-surface"></div>
+                    <div class="desk-leg"></div>
+                </div>
+                <div class="laptop">
+                    <div class="laptop-screen">
+                        <div class="code-lines">
+                            <div class="code-line"></div>
+                            <div class="code-line"></div>
+                            <div class="code-line"></div>
+                        </div>
+                    </div>
+                    <div class="laptop-base"></div>
+                </div>
+                <div class="monitors">
+                    <div class="monitor monitor-1">
+                        <div class="monitor-screen">
+                            <div class="window-bar"></div>
+                            <div class="code-content"></div>
+                        </div>
+                        <div class="monitor-stand"></div>
+                    </div>
+                    <div class="monitor monitor-2">
+                        <div class="monitor-screen">
+                            <div class="window-bar"></div>
+                            <div class="code-content"></div>
+                        </div>
+                        <div class="monitor-stand"></div>
+                    </div>
+                </div>
+                <div class="floating-elements">
+                    <div class="floating-code">{ }</div>
+                    <div class="floating-arrow">→</div>
+                    <div class="floating-sync">⟲</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Right Section with Form -->
+        <div class="right-section">
+            <div class="brand-section">
+                <div class="logo">
+                    <div class="logo-icon">
+                        <div class="node-center"></div>
+                        <div class="node node-1"></div>
+                        <div class="node node-2"></div>
+                        <div class="node node-3"></div>
+                        <div class="node node-4"></div>
+                        <div class="connection connection-1"></div>
+                        <div class="connection connection-2"></div>
+                        <div class="connection connection-3"></div>
+                        <div class="connection connection-4"></div>
+                    </div>
+                    <div class="brand-text">
+                        <h1 class="brand-name">Code <span class="brand-sync">Sync</span></h1>
+                        <p class="brand-tagline">
+                            <span id="typingText"></span>
+                            <span class="cursor">|</span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-section">
+                <div class="input-group">
+                    <input
+                        type="text"
+                        id="roomId"
+                        placeholder="Room Id"
+                        class="input-field"
+                        maxlength="8"
+                    />
+                </div>
+
+                <div class="input-group">
+                    <input
+                        type="text"
+                        id="username"
+                        placeholder="Username"
+                        class="input-field"
+                        maxlength="20"
+                    />
+                </div>
+
+                <button id="joinButton" class="join-button">
+                    <span id="joinText">Join</span>
+                    <div id="loadingSpinner" class="loading-spinner" style="display: none;"></div>
+                </button>
+
+                <div class="generate-room">
+                    <button id="createRoomButton" class="generate-button">
+                        Generate Unique Room Id
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="background-grid"></div>
+    <script src="app.js"></script>
+</body>
+</html>
